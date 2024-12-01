@@ -1,0 +1,154 @@
+/* Kontainer utama untuk section donation */
+
+.donation-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #E7F3F0;
+    /* Warna latar belakang */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* Gambar lingkaran */
+
+.donation-container .circle-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    /* Gambar akan menyesuaikan jika ruang tidak cukup */
+}
+
+.donation-container .circle {
+    width: 100px;
+    /* Ukuran gambar diperbesar */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    margin: 10px;
+    /* Jarak antar gambar */
+}
+
+
+/* Gambar lingkaran bawah lebih rapat */
+
+.donation-container .circle-images:last-child {
+    display: flex;
+    justify-content: center;
+    /* Memusatkan ikon */
+    gap: 400px;
+    /* Mengatur jarak horizontal antar gambar */
+    margin-top: 20px;
+    /* Jarak dari tombol tetap normal */
+}
+
+.donation-container .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+
+/* Styling untuk teks heading */
+
+.donation-container h2 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0 10px;
+    line-height: 1.4;
+}
+
+.donation-container h1 {
+    font-family: Poppins;
+    font-size: 48px;
+    /* Ukuran angka lebih besar */
+    font-weight: bold;
+    color: #007bff;
+    /* Warna teks jumlah donasi */
+    margin: 10px 0;
+}
+
+
+/* Styling untuk deskripsi teks */
+
+.donation-container p {
+    font-family: Poppins;
+    font-size: 16px;
+    color: #666;
+    margin: 20px auto;
+    max-width: 600px;
+    /* Batas lebar teks */
+    line-height: 1.6;
+    /* Menambah jarak antar baris */
+    text-align: center;
+}
+
+
+/* Tombol donasi */
+
+.donation-container .donation-button {
+    background-color: #00b894;
+    /* Warna latar belakang tombol */
+    color: #fff;
+    /* Warna teks tombol */
+    font-family: Poppins;
+    font-size: 16px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.donation-container .donation-button:hover {
+    background-color: #019874;
+    /* Efek hover tombol */
+}
+
+
+/* Responsif untuk layar kecil */
+
+@media (max-width: 768px) {
+    .donation-container .circle-images {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        /* Jarak antar gambar */
+    }
+    .donation-container h2 {
+        font-size: 20px;
+    }
+    .donation-container h1 {
+        font-size: 32px;
+    }
+    .donation-container p {
+        font-size: 14px;
+        padding: 0 10px;
+        /* Menambahkan padding pada layar kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .donation-container .circle {
+        width: 100px;
+        /* Memperkecil ukuran gambar pada layar kecil */
+        height: 100px;
+    }
+    .donation-container h2 {
+        font-size: 18px;
+    }
+    .donation-container h1 {
+        font-size: 28px;
+    }
+    .donation-container p {
+        font-size: 14px;
+    }
+}

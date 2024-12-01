@@ -1,0 +1,54 @@
+.about-container {
+    display: flex;
+    width: 1149px;
+    align-items: flex-start;
+    padding-right: 100px;
+    width: 100%;
+    /* Atau sesuaikan dengan ukuran yang diinginkan */
+    max-width: 1149px;
+    /* Atur lebar maksimum jika perlu */
+    margin: 0 auto;
+    /* Menyelaraskan container secara horizontal */
+}
+
+.about-left {
+    flex: 2;
+    margin-right: 0px;
+}
+
+.about-title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: bold;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.about-right {
+    flex: 2;
+}
+
+.about-description {
+    width: 700px;
+    flex-shrink: 0;
+    line-height: 1.6;
+    line-height: normal;
+    color: #2d4923;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+@media (max-width: 1200px) {
+    .about-container {
+        flex-direction: column;
+    }
+    .about-left {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}

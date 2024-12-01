@@ -1,0 +1,152 @@
+.contact-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: Poppins;
+}
+
+.contact-container h2 {
+    font-family: Poppins;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.contact-container p {
+    font-size: 0.95rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.contact-info p {
+    display: flex;
+    font-family: Poppins;
+    align-items: center;
+    font-size: 0.95rem;
+    color: #333333;
+    margin-bottom: 12px;
+}
+
+.contact-info i {
+    font-family: Poppins;
+    font-size: 1.2rem;
+    color: #4caf50;
+    margin-right: 10px;
+}
+
+.contact-form-map {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    /* Tambahkan jarak antar elemen */
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form .form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-form .form-row input {
+    flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    font-size: 0.9rem;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Poppins;
+    color: rgba(0, 0, 0, 0.6);
+    /* Mengurangi kecerahan teks dengan opacity */
+}
+
+
+/* Placeholder Text yang Pudar */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    /* Warna teks placeholder lebih pudar */
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: rgb(255, 255, 255);
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+.map {
+    flex: 1;
+    min-width: 280px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    overflow: hidden;
+    height: auto;
+    margin-top: 20px;
+    /* Beri jarak tambahan jika dibutuhkan */
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    /* Atur tinggi default untuk peta */
+    border: none;
+}
+
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+    .contact-form .form-row {
+        flex-direction: column;
+    }
+    .contact-form-map {
+        flex-direction: column;
+    }
+    .map {
+        height: 200px;
+    }
+}

@@ -1,0 +1,129 @@
+/* Namespace untuk menghindari konflik */
+
+.header-container {
+    background-color: #eaf7f7;
+    /* Warna latar belakang biru muda */
+    padding: 20px 0;
+    /* Anda bisa mengatur ini sesuai kebutuhan */
+    text-align: center;
+    margin: 0;
+    /* Hapus margin */
+}
+
+.header-container h2 {
+    margin: 0;
+    /* Hapus margin pada judul */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    /* Warna teks */
+    font-family: Poppins;
+}
+
+.programs-section {
+    text-align: center;
+}
+
+.programs-container {
+    background-color: #eaf7f7;
+    /* Warna latar belakang biru muda */
+    padding: 40px 20px;
+    /* Anda bisa mengatur ini sesuai kebutuhan */
+    font-family: Poppins;
+    /* Pastikan font diimpor */
+    max-width: 1200px;
+    /* Atur lebar maksimum */
+    margin: 0 auto;
+    /* Pusatkan kontainer */
+}
+
+.programs-section .slick-slide {
+    display: flex;
+    /* Menggunakan flex untuk kartu */
+    justify-content: center;
+    /* Pusatkan kartu */
+}
+
+.programs-section .program-image {
+    width: 100%;
+    height: 150px;
+    background-color: #ccc;
+}
+
+.programs-section .program-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 300px;
+    /* Atur lebar maksimum untuk kartu */
+    min-height: 400px;
+    /* Atur tinggi minimum untuk kartu */
+}
+
+.programs-section .program-content {
+    padding: 20px;
+    text-align: left;
+    flex-grow: 1;
+    /* Membuat konten mengisi ruang yang tersisa */
+    display: flex;
+    flex-direction: column;
+    /* Mengatur konten dalam kolom */
+    justify-content: flex-start;
+    /* Memastikan tombol berada di bawah */
+}
+
+.programs-section .program-content button {
+    margin-top: auto;
+    /* Memastikan tombol berada di bawah */
+    padding: 8px 16px;
+    background-color: #00a99d;
+    /* Warna latar belakang tombol */
+    border: none;
+    /* Hapus border */
+    border-radius: 5px;
+    /* Sudut melengkung */
+    color: white;
+    /* Warna teks tombol */
+    cursor: pointer;
+    /* Kursor pointer saat hover */
+    transition: background-color 0.3s, color 0.3s;
+    /* Transisi saat hover */
+    font-size: 0.9em;
+    /* Ukuran font */
+}
+
+
+/* Kelas untuk margin tombol */
+
+.button-margin-10 {
+    margin-bottom: 10px;
+}
+
+.button-margin-20 {
+    margin-bottom: 20px;
+}
+
+.button-margin-30 {
+    margin-bottom: 30px;
+}
+
+
+/* Media Query untuk Responsivitas */
+
+@media (max-width: 768px) {
+    .programs-section .programs-container {
+        padding: 20px 10px;
+        /* Kurangi padding pada perangkat kecil */
+    }
+    .programs-section .program-card {
+        max-width: 100%;
+        /* Kartu akan memenuhi lebar kontainer */
+        margin: 10px 0;
+        /* Kurangi margin */
+    }
+}

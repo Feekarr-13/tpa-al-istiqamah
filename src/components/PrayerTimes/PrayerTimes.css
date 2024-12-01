@@ -1,0 +1,231 @@
+.prayer-time-app {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Poppins;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    /* Memberikan ruang di seluruh area */
+    border: 1px solid #ddd;
+    /* Garis tepi di seluruh container */
+    border-radius: 10px;
+    /* Sudut melengkung pada container */
+    background-color: #fff;
+    /* Latar belakang putih */
+}
+
+.date-section {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    font-family: Poppins;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    gap: 20px;
+    /* Menambahkan jarak di bawah tanggal */
+    border: none;
+    /* Menghapus garis tepi pada bagian tanggal */
+}
+
+.islamic-date {
+    color: #00a896;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Menambahkan jarak di antara kotak di kolom kiri dan kanan */
+}
+
+.sunrise-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffe194;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem
+}
+
+.sunset-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #050505;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff
+}
+
+.salah-timings {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.salah-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+    color: #00a896;
+    /* Menghapus garis bawah */
+    /* border-bottom: 1px solid #ddd; */
+}
+
+.salah-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    /* Garis tepi di setiap kolom waktu sholat */
+    border-radius: 5px;
+    /* Membuat sudut kolom melengkung */
+    margin: 0 20px 20px;
+    /* Menambahkan margin kiri dan kanan */
+    background-color: #fff;
+    /* Latar belakang putih */
+}
+
+.salah-time:last-child {
+    margin-bottom: 10;
+    /* Menghilangkan jarak bawah elemen terakhir */
+}
+
+.salah-time.active {
+    background-color: #00a896;
+    color: #fff;
+    font-weight: bold;
+    border-color: #00a896;
+    /* Ubah warna garis saat aktif */
+}
+
+.salah-time span {
+    display: flex;
+    align-items: center;
+}
+
+.salah-time span:first-child::before {
+    content: "⏰";
+    margin-right: 8px;
+    color: #00a896;
+}
+
+
+/* Styling untuk bagian Jumma Khutbah */
+
+.jumma-khutbah {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.jumma-khutbah p:first-child {
+    font-weight: bold;
+    color: #333;
+}
+
+.khatib-info {
+    margin-top: 15px;
+}
+
+.khatib-info p:first-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.khatib-info p:nth-child(2) {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.khatib-image {
+    width: 100px;
+    /* Atur ukuran gambar */
+    height: 100px;
+    border-radius: 50%;
+    /* Membuat gambar menjadi bulat */
+    overflow: hidden;
+}
+
+.khatib-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Memastikan gambar pas di dalam lingkaran */
+}
+
+.khutbah-timing {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.khutbah-timing p {
+    color: #00a896;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.khutbah-timing .time {
+    display: block;
+    background-color: #000;
+    color: #ffe194;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+
+/* Styling untuk bagian Friday Event */
+
+.friday-event {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.friday-event p:first-child {
+    font-weight: bold;
+    color: #00a896;
+    margin-bottom: 10px;
+}
+
+.event-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.event-time:last-child {
+    margin-bottom: 0;
+}

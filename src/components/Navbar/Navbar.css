@@ -1,0 +1,78 @@
+/* Navbar.css */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+    justify-content: space-between;
+    padding: 5px 15px;
+    background: linear-gradient(to bottom, #FDF8E8, white 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 50px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.navbar-logo span {
+    font-weight: bold;
+    font-size: 1.5em;
+    /* Ukuran font lebih besar untuk teks logo */
+    color: #2d4923;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 9px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #2d4923;
+    font-weight: 500;
+    font-size: 1em;
+    /* Ukuran font standar untuk link */
+}
+
+.navbar-links a.active {
+    color: #56c6ac;
+}
+
+.contact-button {
+    background-color: #20c997;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #45b39d;
+}

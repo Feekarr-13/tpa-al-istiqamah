@@ -1,0 +1,91 @@
+:root {
+    --custom-text-color: #ffcc00;
+    /* Ganti dengan warna default yang diinginkan */
+}
+
+.footer {
+    background-color: #212830;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    width: 200px;
+}
+
+.logo-text {
+    font-family: poppins;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.footer-section h2 {
+    font-family: poppins;
+    color: #00b894;
+    margin: 0;
+}
+
+.custom-text-color {
+    color: var(--custom-text-color);
+    /* Menggunakan variabel untuk warna */
+}
+
+.footer-section h2,
+.footer-section h3 {
+    font-family: poppins;
+    color: #00b894;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-family: poppins;
+    margin: 10px 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: #00b894;
+}
+
+.custom-image {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}

@@ -1,0 +1,60 @@
+.daily-prayers-container {
+    display: flex;
+    width: 100%;
+    /* Agar mengikuti lebar layar */
+    max-width: 1166px;
+    /* Batas lebar maksimal */
+    align-items: center;
+    gap: 50px;
+    margin-left: auto;
+    /* Untuk memastikan konten berada di tengah */
+    margin-right: auto;
+    /* Untuk memastikan konten berada di tengah */
+    padding: 40, 40px;
+    /* Menambahkan jarak di kiri dan kanan */
+}
+
+.daily-prayers-left {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.daily-prayers-title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 33px;
+    font-style: bold;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.daily-prayers-right {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.daily-prayers-description {
+    width: 700px;
+    flex-shrink: 0;
+    line-height: 1.6;
+    line-height: normal;
+    color: #2d4923;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+@media (max-width: 768px) {
+    .daily-prayers-container {
+        flex-direction: column;
+        padding: 0 10px;
+        /* Mengurangi jarak kiri dan kanan di layar kecil */
+    }
+    .daily-prayers-left {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
