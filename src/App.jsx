@@ -11,7 +11,7 @@ import ProgramApp from './components/ProgramApp/ProgramApp';
 import DonationSection from './components/DonationSection/DonationSection';
 import ContactUs from './components/ContactUs/ContactUs';
 import Footer from './components/Footer/Footer';
-
+import './App.css'; 
 
 
 function App() {
