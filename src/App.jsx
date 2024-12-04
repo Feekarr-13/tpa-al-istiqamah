@@ -12,6 +12,7 @@ import DonationSection from './components/DonationSection/DonationSection';
 import ContactUs from './components/ContactUs/ContactUs';
 import Footer from './components/Footer/Footer';
 import './App.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
